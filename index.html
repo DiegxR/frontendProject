@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
     <header>
-        <img src="./imagenes/logo.svg" alt="logo">
-        <img src="./imagenes/icon-hamburger.svg" alt="menu">
-        <nav>
+        <img class="logo" src="./imagenes/logo.svg" alt="logo">
+        <label for="handleNav" class="handleNav">
+            <img class="icon-hamburger" src="./imagenes/icon-hamburger.svg" alt="menu">
+        </label>
+        <input id="handleNav" type="checkbox">
+        <nav class="nav">
+            <label for="handleNav" class="handleNav">
+                <img class="close-nav" src="./imagenes/icon-close.svg" alt="">
+            </label>
             <ul>
                 <li>Sports</li>
                 <li>Products</li>
@@ -19,17 +24,55 @@
                 <li>Trainning</li>
                 <li>Community</li>
             </ul>
-            <button>Contact</button>
+            <button class="button-style">Contact</button>
         </nav>
     </header>
-    <section>
-        <div>
+    <section class="padel-intro">
             <img src="./imagenes/padel-intro.png" alt="padelImage">
-            <section>
+            <div class="padel-content">
                 <h3>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h3>
-                <p>The final Open of the 2022 Word Padel Tour season is underway, don' miss out on any</p>
-            </section>
-        </div>
+                <p>The final Open of the 2022 World Padel Tour season is underway, don' miss out on any of the action!</p>
+                <button class="button-style">Contact</button>
+            </div>
+    </section>
+    <section class="middle-sec">
+        <h2>What's different between pros?</h2>
+        <p>Manage provides all the funcionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+    </section>
+    <section class="items-container">
+        <article>
+            <div>
+                <h4>01</h4>
+               <span>
+                   Track company-wide progress
+               </span> 
+            </div>
+            <p>
+                Donec elit est, mattis lacinia arcu eu, efficitur consequar augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci retrum, placerat quam eget, consequat dolor.
+            </p>
+        </article>
+        <article>
+            <div>
+                <h4>02</h4>
+                <span>
+                    Advance built-in reports
+                </span> 
+            </div>
+            <p>
+                Donec elit est, mattis lacinia arcu eu, efficitur consequar augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci retrum, placerat quam eget, consequat dolor.
+            </p>
+        </article>
+        <article>
+            <div>
+                <h4>03</h4>
+                <span>
+                    Everything you need in one place
+                </span> 
+            </div>
+            <p>
+                Donec elit est, mattis lacinia arcu eu, efficitur consequar augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci retrum, placerat quam eget, consequat dolor.
+            </p>
+        </article>
     </section>
 </body>
 
