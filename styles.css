@@ -167,6 +167,9 @@ header nav .close-nav{
     .icon-hamburger, .close-nav{
         display: none;
     }
+    header{
+        padding-inline: 5%;
+    }
     header .nav {
         align-items: center;
         transform: translate(0, 0);
@@ -190,13 +193,17 @@ header nav .close-nav{
         text-decoration: underline;
     }
     .padel-intro{
+        font-size: 1rem;
         flex-direction: row;
+        justify-content: space-around;
+        padding-block: 5%;
     }
     .padel-intro img{
         width: 50%;
     }
     .padel-content{
         padding-left: 0px;
+        max-width: 500px;
     }
     .middle-sec{
         background: #8B48BF;
@@ -205,6 +212,9 @@ header nav .close-nav{
         font-size: 1em;
         justify-content: space-around;
     }
+    .middle-sec h2, p{
+        max-width: 500px;
+    }
     .items-container{
         display: flex;
         flex-wrap: wrap;
@@ -212,6 +222,7 @@ header nav .close-nav{
         row-gap: 1.5em;
         align-items: center;
         justify-content: center;
+        background-color: #FAFAFA;
     }
     .items-container article{
      max-width: 40%;
