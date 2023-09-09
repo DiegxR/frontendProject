@@ -6,6 +6,8 @@
   list-style: none;
   font-family: "Be Vietnam Pro", sans-serif;
 }
+/* Diseño Mobile */
+/* cabecera */
 header {
   width: 100%;
   display: flex;
@@ -57,6 +59,7 @@ header nav .close-nav {
   flex-direction: column;
   gap: 1rem;
 }
+/* intro contenido */
 .padel-intro {
   display: flex;
   flex-direction: column;
@@ -288,62 +291,73 @@ footer {
   font-size: 12px;
 }
 
-@media (min-width: 768px) {
-  .icon-hamburger,
-  .close-nav {
-    display: none;
-  }
-  header .nav {
-    align-items: center;
-    transform: translate(0, 0);
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    padding: 0px;
-    justify-content: space-between;
-  }
-  .nav ul {
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .nav ul li {
-    transition: all ease 200ms;
-  }
-  .nav ul li:hover {
-    color: #8b48bf;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .padel-intro {
-    flex-direction: row;
-  }
-  .padel-intro img {
-    width: 50%;
-  }
-  .padel-content {
-    padding-left: 0px;
-  }
-  .middle-sec {
-    background: #8b48bf;
-    flex-direction: row;
-    padding-inline: 6em;
-    font-size: 1em;
-    justify-content: space-around;
-  }
-  .items-container {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10%;
-    row-gap: 1.5em;
-    align-items: center;
-    justify-content: center;
-  }
-  .items-container article {
-    max-width: 40%;
-    min-width: 200px;
-  }
-  .items-container article div {
+/* Diseño Desktop */
+@media (min-width: 768px){
+    .icon-hamburger, .close-nav{
+        display: none;
+    }
+    header{
+        padding-inline: 5%;
+    }
+    header .nav {
+        align-items: center;
+        transform: translate(0, 0);
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .nav ul{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .nav ul li{
+        transition: all ease 200ms;
+    }
+    .nav ul li:hover{
+        color: #8B48BF;
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .padel-intro{
+        font-size: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-block: 5%;
+    }
+    .padel-intro img{
+        width: 50%;
+    }
+    .padel-content{
+        padding-left: 0px;
+        max-width: 500px;
+    }
+    .middle-sec{
+        background: #8B48BF;
+        flex-direction: row;
+        padding-inline: 6em;
+        font-size: 1em;
+        justify-content: space-around;
+    }
+    .middle-sec h2, p{
+        max-width: 500px;
+    }
+    .items-container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10%;
+        row-gap: 1.5em;
+        align-items: center;
+        justify-content: center;
+        background-color: #FAFAFA;
+    }
+    .items-container article{
+     max-width: 40%;
+     min-width: 200px;
+    }
+    .items-container article div{
     background-color: transparent;
     transform: translate(-77px, 0px);
     font-size: 1.5em;
