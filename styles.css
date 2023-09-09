@@ -290,7 +290,9 @@ footer {
   color: #b3b2b7;
   font-size: 12px;
 }
-
+.card-text_container{
+  max-width: 500px;
+}
 /* Diseño Desktop */
 @media (min-width: 768px){
     .icon-hamburger, .close-nav{
@@ -352,6 +354,7 @@ footer {
         align-items: center;
         justify-content: center;
         background-color: #FAFAFA;
+        padding-left: 10%;
     }
     .items-container article{
      max-width: 40%;
@@ -428,8 +431,10 @@ footer {
   .copy-right1 {
     display: none;
   }
-
+  .search{
+    width: 100%;
+  }
   .search input {
-    width: 250px;
+    width: 60%;
   }
 }
